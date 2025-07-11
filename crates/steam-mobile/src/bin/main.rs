@@ -290,7 +290,7 @@ async fn handle_login(
         .map(|ma_file| SteamUser::new(account.to_string(), password.to_string()).with_mafile(ma_file))
         .expect("Safe.");
 
-    let authenticator = SteamAuthenticator::new(user);
+    let authenticator = SteamAuthenticator::new(user, None);
     authenticator.login().err_into().await
 }
 

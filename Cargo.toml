@@ -11,12 +11,14 @@ steamid-parser = { path = "./crates/steamid-parser", version = "0.2.1" }
 tappet = { path = "./crates/tappet", version = "0.6.0" }
 tappet-derive = { path = "./crates/tappet-derive", version = "0.3.2" }
 
+proxied = { version = "^1", features = ["reqwest"] }
+
 base64 = "^0.21"
 bytes = "^1"
 const_format = "^0.2"
-derive_more = { version = "1.0.0-beta.6", features = ["full"] }
+derive_more = { version = "1.0.0", features = ["full"] }
 rand = "^0.8"
-reqwest = { version = "^0.11", features = ["cookies", "multipart"] }
+reqwest = { version = "^0.12", features = ["cookies", "multipart", "json"] }
 regex = "^1"
 futures = "^0.3"
 futures-util = "^0.3"
