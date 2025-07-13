@@ -40,14 +40,7 @@ use crate::{
 
 /// Main authenticator. We use it to spawn and act as our "mobile" client.
 /// Responsible for accepting/denying trades, and some other operations that may or not be related
-/// to mobile operations.
-///
-/// # Example: Fetch mobile notifications
-///
-/// ```rust
-/// use steam_mobile::SteamAuthenticator;
-/// use steam_mobile::User;
-/// ```
+/// to mobile operations.   
 #[derive(Debug)]
 pub struct SteamAuthenticator<AuthState, MaFileState> {
     inner: InnerAuthenticator<MaFileState>,

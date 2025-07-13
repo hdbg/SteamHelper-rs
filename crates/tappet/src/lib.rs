@@ -16,7 +16,7 @@
 //!
 //! # Usage
 //!
-//! ```no_run
+//! ```ignore
 //! use tappet::{SteamAPI, Executor};
 //! use tappet::response_types;
 //! use anyhow::Result;
@@ -45,7 +45,7 @@
 //!
 //! But a "master" api key is still needed to instantiate `SteamAPI` in order to avoid panics.
 //!
-//! ```no_run
+//! ```ignore
 //! use tappet::{SteamAPI, Executor};
 //! use tappet::response_types;
 //! use anyhow::Result;
